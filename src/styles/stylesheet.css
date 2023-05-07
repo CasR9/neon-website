@@ -1,0 +1,26 @@
+html, body {
+    height: 100%
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+
+    /* Background */
+    background: linear-gradient(-45deg, #251424, #180c16, #000000);
+    background-size: 400% 400%;
+    animation: backgroundLoop 15s ease infinite;
+}
+
+@keyframes backgroundLoop {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
